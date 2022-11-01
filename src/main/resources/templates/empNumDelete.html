@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Rafae Khan - Employee Update</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Update using employee number</h1>
+	
+	<form action="#" th:action="@{/empNumSearchInput}" th:object="${employee}"
+		method="post">
+		<p>
+			Employee number: <input type="text" th:field="*{empNum}" />
+		</p>
+		<p>
+			New Phone number: <input type="text" th:field="*{empPhone}" />
+		</p>
+		<p>
+			<input type="submit" value="Submit" /> <br> <br> 
+			<input type="reset" value="Reset" />
+		</p>
+	</form>
+	<a href="/index"> Main Page </a>
+</body>
+</html>

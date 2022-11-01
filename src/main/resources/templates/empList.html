@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Rafae Khan - Employee List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Employee List as a table:</h1>
+	<table>
+		<tr>
+			<th>Employee Num</th>
+			<th>Employee Name</th>
+			<th>Employee Address</th>
+			<th>Employee Phone</th>
+		</tr>
+		<tr th:each="aEmployee:${employees}">
+		 	<td th:text="${aEmployee.getEmpNum}"></td> 
+			<td th:text="${aEmployee.getEmpName}"></td>
+			<td th:text="${aEmployee.getEmpAddress}"></td>
+			<td th:text="${aEmployee.getEmpPhone}"></td>
+		</tr>
+	</table>
+	<a href="/userInput">Add another employee</a>
+	<br>
+	<a href="/index">Cancel</a>
+</body>
+</html>
