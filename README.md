@@ -4,4 +4,4 @@
 
 #Program Name: Employee Database
 
-#Program Description: H2 employee database system integrated using Java EE DAO using MVC
+#Program Description: H2 employee database system integrated using Java EE DAO using MVC. Spring Framwork is used throughout and spring security is implmented
